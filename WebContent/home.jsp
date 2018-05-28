@@ -27,7 +27,7 @@
 			};
 
 			//passando objeto como segundo parametro
-			$.post("http://localhost:9090/patente-wipo/", dados,
+			$.post("${pageContext.request.contextPath}/", dados,
 					preenchePatente).fail(function() {
 				$("#erro").toggle();
 				setTimeout(function() {

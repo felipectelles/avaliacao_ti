@@ -43,7 +43,7 @@
 					tipoFiltro : tipoFiltro
 				};
 
-				$.get("http://localhost:9090/patente-wipo/patente", dados,
+				$.get("${pageContext.request.contextPath}/patente", dados,
 						preencheTable).fail(function() {
 					setTimeout(function() {
 					}, 2000);
